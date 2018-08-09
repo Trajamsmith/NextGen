@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'nextgen.urls'
 
 TEMPLATES = [
-    {testin this bad boy
+    {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(os.path.dirname(BASE_DIR), 'client/build')
@@ -68,7 +68,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-     },
+    },
 ]
 
 WSGI_APPLICATION = 'nextgen.wsgi.application'
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'nextgen.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresl_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'nextgen',
         'USER': '',
         'PASSWORD': '',
