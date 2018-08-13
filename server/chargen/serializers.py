@@ -1,6 +1,8 @@
 from .models import Race
 from rest_framework import serializers
 
+# D&D Races
+
 
 class RaceSerializer(serializers.ModelSerializer):
     class Meta:
