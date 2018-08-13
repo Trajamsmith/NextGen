@@ -12,3 +12,13 @@ class Race(models.Model):
             size=5,
         )
     )
+
+
+class Class(models.Model):
+    name = models.CharField(max_length=30)
+    ability_modifiers = ArrayField(
+        ArrayField(
+            models.IntegerField(default=0),
+            size=5,
+        )
+    )
