@@ -1,6 +1,6 @@
 from .models import Race, Class
 from rest_framework import viewsets
-from .serializers import RaceSerializer
+from .serializers import RaceSerializer, ClassSerializer
 
 
 class RaceViewSet(viewsets.ModelViewSet):
