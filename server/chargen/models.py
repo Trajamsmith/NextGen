@@ -9,7 +9,7 @@ class Race(models.Model):
     ability_modifiers = ArrayField(
         ArrayField(
             models.IntegerField(default=0),
-            size=5,
+            size=6,
         )
     )
 
