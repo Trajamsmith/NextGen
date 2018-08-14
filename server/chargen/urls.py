@@ -4,4 +4,5 @@ from . import views
 app_name = 'polls'
 urlpatterns = [
     path('race/', views.RaceViewSet),
+    path('class/', views.ClassViewSet),
 ]

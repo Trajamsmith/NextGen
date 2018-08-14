@@ -1,4 +1,4 @@
-from .models import Race
+from .models import Race, Class
 from rest_framework import viewsets
 from .serializers import RaceSerializer
 
@@ -6,3 +6,8 @@ from .serializers import RaceSerializer
 class RaceViewSet(viewsets.ModelViewSet):
     queryset = Race.objects.all()
     serializer_class = RaceSerializer
+
+
+class ClassViewSet(viewsets.ModelViewSet):
+    queryset = Class.objects.all()
+    serializer_class = ClassSerializer
